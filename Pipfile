@@ -11,6 +11,7 @@ rope = "*"
 [packages]
 selenium = "*"
 prettyconf = "*"
+plac = "*"
 
 [requires]
 python_version = "3.7"

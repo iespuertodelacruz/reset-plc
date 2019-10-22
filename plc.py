@@ -9,9 +9,9 @@ from selenium.webdriver.support.ui import WebDriverWait
 
 
 class PlcHandler:
-    def __init__(self):
+    def __init__(self, headless=True):
         options = Options()
-        options.headless = True
+        options.headless = headless
         profile = webdriver.FirefoxProfile()
         self.driver = webdriver.Firefox(options=options,
                                         firefox_profile=profile)
