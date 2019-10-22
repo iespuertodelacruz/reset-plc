@@ -10,6 +10,7 @@ rope = "*"
 
 [packages]
 selenium = "*"
+prettyconf = "*"
 
 [requires]
 python_version = "3.7"
