@@ -6,8 +6,9 @@ import config
 from plc import PlcHandler
 
 
-def main(debug: ('make the browser visible', 'flag', 'd')):
-    plc_handler = PlcHandler(not debug)
+def main(debug: ('debug mode', 'flag'),
+         headfull: ('make the browser visible', 'flag')):
+    plc_handler = PlcHandler(debug=debug, headless=not headfull)
     plc_handler.login(url=config.PLC_URL,
                       username=config.PLC_USERNAME,
                       password=config.PLC_PASSWORD)
